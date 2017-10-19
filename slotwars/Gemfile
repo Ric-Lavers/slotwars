@@ -11,6 +11,12 @@ end
 
 gem 'devise'
 
+#gem for devise
+gem 'devise'
+
+#gem for adding images
+gem "shrine"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record
