@@ -50,4 +50,5 @@ while go = 1
     break
   end
 end
-gamble.score
+
+db << gamble.score
