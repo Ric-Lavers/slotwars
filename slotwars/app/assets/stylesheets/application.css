@@ -19,3 +19,11 @@
   height:150px;
   object-fit: contain;
 }
+
+/*styling devise bar*/
+.logging_in{
+  text-align: center
+}
+.new_log_in{
+  text-align: center
+}
