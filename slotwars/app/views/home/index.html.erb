@@ -1,0 +1,20 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<h1>HELLLOOOOOOO</h1>
+
+<img src="/images/bb-8.jpg" alt="">
+
+<!-- AJAX THIS  -->
+  <%gamble = Slot.new%>
+  <%result = gamble.spin%>
+  <div class="slots">
+
+    <%= image_tag(result[0], :class => "box") %>
+    <%= image_tag(result[1], :class => "box") %>
+    <%= image_tag(result[2], :class => "box") %>
+
+  </div>
+
+  <h1> <%=gamble.score%> </h1>
+<!-- AJAX  -->
