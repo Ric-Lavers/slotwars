@@ -14,10 +14,38 @@
  *= require_self
  */
 
+@font-face {font-family:"STARWARS";src:url("STARWARS.eot?") format("eot"),url("STARWARS.woff") format("woff"),url("STARWARS.ttf") format("truetype"),url("STARWARS.svg#STARWARS") format("svg");font-weight:normal;font-style:normal;}
+
+
+
+ *{
+   margin:0 auto;
+   font-family:"STARWARS", verdana;
+ }
+ body{
+   background-color: black;
+   color: #FADB4A;
+ }
+ h1{
+   margin-top:24px;
+   text-align: center;
+
+ }
+.slots{
+  display: flex;
+  align-items:center;
+
+}
+.results{
+  border: 2px solid red;
+    background-color: white;
+}
 .box{
   width:150px;
   height:150px;
   object-fit: contain;
+  /*border: 1px solid black;*/
+  padding: 8px;
 }
 
 /*styling devise bar*/

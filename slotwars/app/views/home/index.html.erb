@@ -1,24 +1,34 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
 
-<h1>HELLLOOOOOOO</h1>
+
+<h1>STARWARS</h1>
+<h1>Is the force strong in you?</h1>
 
 <img src="/images/bb-8.jpg" alt="">
 
 <!-- AJAX THIS  -->
 
   <div class="slots">
-
-    <%= image_tag(@result[0], :class => "box") %>
-    <%= image_tag(@result[1], :class => "box") %>
-    <%= image_tag(@result[2], :class => "box") %>
-
+    <div class="results">
+      <%= image_tag(@result[0], :class => "box") %>
+      <%= image_tag(@result[1], :class => "box") %>
+      <%= image_tag(@result[2], :class => "box") %>
+    </div>
   </div>
 
-  <h1> <%=@score%> </h1>
 
-  <h2><%#= $thing.array %></h2>
-<!-- AJAX  -->
-    
 
-  <%= current_user.token.points%>
+  <h1>
+  <%if @score == 0 %>
+    no...its not
+  <% else %>
+    yes it is.. <%= @score%> points
+  <% end %>
+</h1>
+
+  <%=$thing.points += @score%>
+
+  <h2><%= Token.all.each{|i|i.score} %></h2>
+
+
+
+<%= link_to 'Profile', profiles_path%>

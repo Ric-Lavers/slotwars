@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   # $thing = Game.new
+  
   def index
     @gamble = Slot.new
     @result = @gamble.spin
@@ -11,7 +12,7 @@ class HomeController < ApplicationController
     # # $thing.array += @score
     # @points.update(points: @score)
 
-    current_user.token.points = @score
+    # current_user.token.points = @score
     # @points
 
     current_user.save!
