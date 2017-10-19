@@ -15,6 +15,7 @@ gem 'devise'
 
 #gem for adding images
 gem "shrine"
+gem 'geocoder'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
