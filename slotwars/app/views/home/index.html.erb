@@ -6,15 +6,15 @@
 <img src="/images/bb-8.jpg" alt="">
 
 <!-- AJAX THIS  -->
-  <%gamble = Slot.new%>
-  <%result = gamble.spin%>
   <div class="slots">
 
-    <%= image_tag(result[0], :class => "box") %>
-    <%= image_tag(result[1], :class => "box") %>
-    <%= image_tag(result[2], :class => "box") %>
+    <%= image_tag(@result[0], :class => "box") %>
+    <%= image_tag(@result[1], :class => "box") %>
+    <%= image_tag(@result[2], :class => "box") %>
 
   </div>
 
-  <h1> <%=gamble.score%> </h1>
+  <h1> <%=@score%> </h1>
+
+  <h1> <%#@gamble.totalScore%> </h1>
 <!-- AJAX  -->

@@ -20,10 +20,13 @@ class Slot < ApplicationRecord
   def score
     case @result
     when [@a,@a,@a]
+      @totalscore += 50
       return 50
     when [@k,@k,@k]
+      @totalscore += 30
       return 30
     when [@q,@q,@q]
+      @totalscore += 10
       return 10
     else
       return 0
