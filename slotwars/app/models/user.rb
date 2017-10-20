@@ -5,8 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_one :token
-  def initialize(token)
-    super
-    token = Token.new(:points => 50)
-  end
+
 end
