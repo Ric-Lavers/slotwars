@@ -1,9 +1,9 @@
 class Slot < ApplicationRecord
 
   def initialize
-    @q = "bb-8.jpg"
+    @q = "bb-8.png"
     @k = "porg.png"
-    @a = "bad_guy.jpeg"
+    @a = "bad_guy.png"
     @cards = [@q,@k,@a]
     @totalscore = 0
   end
@@ -18,20 +18,21 @@ class Slot < ApplicationRecord
   end
 
   def score
-    case @result
-    when [@a,@a,@a]
+    if @result == [@a,@a,@a]
       return 50
-    when [@k,@k,@k]
-      return 30
-    when [@q,@q,@q]
-      return 10
+    elsif @result == [@k,@k,@k]
+      return 35
+    elsif @result ==  [@q,@q,@q]
+      return 20
+    elsif @result.count(@a) == 2
+      return 5
+    elsif @result.count(@k) == 2
+      return 5
+    elsif @result.count(@q) == 2
+      return 5
     else
       return 0
     end
-  end
-
-  def totalScore
-    @totalscore
   end
 
 end

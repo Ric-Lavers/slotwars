@@ -5,10 +5,11 @@ class HomeController < ApplicationController
     @result = @gamble.spin
     @score = @gamble.score
     # puts "#{@score}".green
-    goals = @score
-    current_user.score += goals
 
-    puts "#{current_user.score}".green
+
+    goals = @score
+
+    current_user.score += goals
     # @points.save!
     #
     # # $thing.array += @score

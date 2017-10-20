@@ -23,10 +23,9 @@
    font-family:"STARWARS", verdana;
  }
  body{
-   background-image: url("background.jpeg");
+   background-image: url("background.png");
 
-   background-size: contain;
-  //  background-color: red;
+   background-size: auto;
    color: #FADB4A;
  }
  h1{
@@ -42,22 +41,23 @@
   display: flex;
   align-items: center;
   height: 100px;}
-/*.title{grid-area: title;}*/
-/*.slot-machine{grid-area: slots;}
-.twitter-feed{grid-area: twitter;}*/
+
 
 .contatiner{
   display: flex;
   align-items:flex-start;
-  /*grid-column: 1fr 1fr 1fr;*/
-  /*grid-template-areas:
-    "twitter  title  title"
-    "twitter  slots  ."
-    ;*/
+
 }
 
 /*.contatiner{border: 1px solid green}*/
-
+.slot-machine{
+  margin-top: 60px;
+  padding: 30px;
+  height: 540px;
+  background-image: url("last-jedi.jpg");
+  border-radius: 10%;
+  background-size: cover;
+}
 .slots{
   display: flex;
   align-items:center;
@@ -65,16 +65,27 @@
 }
 .results{
   border: 2px solid red;
-    background-color: white;
+    background-color: red;
 }
 .box{
+  background-image: url("background.png");
   width:150px;
   height:150px;
   object-fit: contain;
-  /*border: 1px solid black;*/
+  border: 3px solid red;
   padding: 8px;
 }
-
+.gif{
+  margin-top:20px;
+  width:350px;
+  height:210px;
+  border-radius: 12px;
+  object-fit:cover;
+}
+.purple{
+  color: #ADC8F0;
+  text-shadow: 2px 2px #8164B9;
+}
 /*styling devise bar*/
 .logging_in{
   text-align: center
