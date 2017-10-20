@@ -10,22 +10,29 @@
   </div><!-- twitter-feed -->
   <div class="slot-machine">
     <h1>Is the force strong in you?</h1>
-
-    <img src="/images/bb-8.jpg" alt="">
     <div class="slots">
       <div class="results">
+
+
+
+
+
+
+
         <%= image_tag(@result[0], :class => "box") %>
         <%= image_tag(@result[1], :class => "box") %>
         <%= image_tag(@result[2], :class => "box") %>
       </div>
     </div>
-    <h1>
+    <h1 >
     <%if @score == 0 %>
       no...its not
     <% else %>
       yes it is.. <%= @score%> points
     <% end %>
     </h1>
+
+    <h1 class= "purple"><%="#{current_user.score}"%></h1>
   </div><!-- slot-machine -->
 
 </div>

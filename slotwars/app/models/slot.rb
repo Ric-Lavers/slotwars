@@ -1,7 +1,7 @@
 class Slot < ApplicationRecord
 
   def initialize
-    @q = "bb-8.jpg"
+    @q = "bb-8.png"
     @k = "porg.png"
     @a = "bad_guy.jpeg"
     @cards = [@q,@k,@a]
