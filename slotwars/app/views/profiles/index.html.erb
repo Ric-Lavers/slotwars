@@ -1,8 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<%= render 'loginlogout'%>
+<div class="title">
+  <%= link_to root_path do %>
+  <%= image_tag("logo.png") %>
+  <% end %>
+</div>
 
-<h1 class="leaderboard_heading">Profiles</h1>
+<%= render 'loginlogout'%>
 
 <%= link_to 'Home', root_path %>
 
