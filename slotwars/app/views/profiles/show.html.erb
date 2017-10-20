@@ -1,18 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>User:</strong>
-  <%= @profile.user %>
-</p>
-
-<p>
   <strong>Username:</strong>
   <%= @profile.username %>
 </p>
 
 <p>
-  <strong>Avatar data:</strong>
-  <%= @profile.avatar_data %>
+  <strong>Profile Pic</strong>
+  <img class="profile_image" src="<%= @profile.avatar_url%>">
 </p>
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
