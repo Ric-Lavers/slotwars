@@ -23,7 +23,10 @@
    font-family:"STARWARS", verdana;
  }
  body{
-   background-color: black;
+   background-image: url("background.jpeg");
+
+   background-size: contain;
+  //  background-color: red;
    color: #FADB4A;
  }
  h1{
@@ -31,6 +34,30 @@
    text-align: center;
 
  }
+.twitter-feed{
+  padding-top: 60px;
+  height:600px;width:300px;}
+
+.title{
+  display: flex;
+  align-items: center;
+  height: 100px;}
+/*.title{grid-area: title;}*/
+/*.slot-machine{grid-area: slots;}
+.twitter-feed{grid-area: twitter;}*/
+
+.contatiner{
+  display: flex;
+  align-items:flex-start;
+  /*grid-column: 1fr 1fr 1fr;*/
+  /*grid-template-areas:
+    "twitter  title  title"
+    "twitter  slots  ."
+    ;*/
+}
+
+/*.contatiner{border: 1px solid green}*/
+
 .slots{
   display: flex;
   align-items:center;
