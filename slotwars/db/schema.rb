@@ -12,11 +12,8 @@
 
 ActiveRecord::Schema.define(version: 20171019063726) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "profiles", force: :cascade do |t|
-    t.bigint "user_id"
+    t.integer "user_id"
     t.string "username"
     t.text "avatar_data"
     t.datetime "created_at", null: false
@@ -30,7 +27,7 @@ ActiveRecord::Schema.define(version: 20171019063726) do
   end
 
   create_table "tokens", force: :cascade do |t|
-    t.bigint "user_id"
+    t.integer "user_id"
     t.integer "points"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -54,6 +51,4 @@ ActiveRecord::Schema.define(version: 20171019063726) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "profiles", "users"
-  add_foreign_key "tokens", "users"
 end
