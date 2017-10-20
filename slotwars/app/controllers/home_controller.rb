@@ -6,7 +6,10 @@ class HomeController < ApplicationController
     @score = @gamble.score
     # puts "#{@score}".green
     goals = @score
+
+    
     current_user.score += goals
+
 
     puts "#{current_user.score}".green
     # @points.save!

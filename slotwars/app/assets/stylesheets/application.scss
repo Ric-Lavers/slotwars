@@ -16,8 +16,6 @@
 
 @font-face {font-family:"STARWARS";src:url("STARWARS.eot?") format("eot"),url("STARWARS.woff") format("woff"),url("STARWARS.ttf") format("truetype"),url("STARWARS.svg#STARWARS") format("svg");font-weight:normal;font-style:normal;}
 
-
-
  *{
    margin:0 auto;
    font-family:"STARWARS", verdana;
@@ -25,7 +23,7 @@
  body{
    background-image: url("background.jpeg");
 
-   background-size: contain;
+   background-size: auto;
   //  background-color: red;
    color: #FADB4A;
  }
@@ -77,8 +75,12 @@
 
 /*styling devise bar*/
 .logging_in{
-  text-align: center
+  text-align: center;
 }
 .new_log_in{
-  text-align: center
+  text-align: center;
+}
+
+.center_field {
+  margin-top: 12%;
 }
