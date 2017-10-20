@@ -23,7 +23,7 @@
    font-family:"STARWARS", verdana;
  }
  body{
-   background-image: url("background.jpeg");
+   background-image: url("background.png");
 
    background-size: auto;
    color: #FADB4A;
@@ -68,7 +68,7 @@
     background-color: red;
 }
 .box{
-  background-image: url("background.jpeg");
+  background-image: url("background.png");
   width:150px;
   height:150px;
   object-fit: contain;

@@ -3,7 +3,7 @@ class Slot < ApplicationRecord
   def initialize
     @q = "bb-8.png"
     @k = "porg.png"
-    @a = "bad_guy.jpeg"
+    @a = "bad_guy.png"
     @cards = [@q,@k,@a]
     @totalscore = 0
   end
