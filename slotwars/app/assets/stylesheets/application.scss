@@ -53,9 +53,10 @@
 .slot-machine{
   margin-top: 60px;
   padding: 30px;
+  height: 600px;
   background-image: url("last-jedi.jpg");
   border-radius: 10%;
-  background-size: contain;
+  background-size: cover;
 }
 .slots{
   display: flex;
@@ -73,6 +74,12 @@
   object-fit: contain;
   border: 3px solid red;
   padding: 8px;
+}
+.gif{
+  margin-top:20px;
+  width:350px;
+  height:250px;
+  object-fit:cover;
 }
 .purple{
   color: #ADC8F0
