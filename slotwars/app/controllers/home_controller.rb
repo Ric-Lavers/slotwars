@@ -1,12 +1,14 @@
 class HomeController < ApplicationController
   # $thing = Game.new
-  
   def index
     @gamble = Slot.new
     @result = @gamble.spin
     @score = @gamble.score
     # puts "#{@score}".green
-    @points = Token.new(user_id: current_user.id, points: @score)
+    goals = @score
+    current_user.score += goals
+
+    puts "#{current_user.score}".green
     # @points.save!
     #
     # # $thing.array += @score
