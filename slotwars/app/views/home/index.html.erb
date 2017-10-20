@@ -33,11 +33,11 @@
 
     <h1 class= "purple"><%="#{current_user.score}"%></h1>
     <div class="">
-      <%if current_user.score > 25 && current_user.score < 60 %>
+      <%if current_user.score > 20 && current_user.score < 75 %>
         <%= image_tag("source.gif", :class => "gif") %>
-      <%elsif current_user.score > 100 && current_user.score < 130 %>
+      <%elsif current_user.score > 100 && current_user.score < 150 %>
         <%= image_tag("lady.gif", :class => "gif") %>
-      <%elsif current_user.score > 200 && current_user.score < 230 %>
+      <%elsif current_user.score > 190 && current_user.score < 230 %>
         <%= image_tag("kylo.gif", :class => "gif") %>
       <%end%>
     </div>
