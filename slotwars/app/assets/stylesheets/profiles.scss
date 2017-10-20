@@ -35,6 +35,7 @@
 
 .crawl {
   position: relative;
+  text-align: center;
   top: 9999px;
   transform-origin: 90% 100%;
   animation: crawl 60s linear;
@@ -59,4 +60,32 @@
     top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
   }
+}
+
+
+.leaderboard_heading{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.profile_image{
+  margin-left: 15px;
+  overflow:hidden;
+ -webkit-border-radius:50px;
+ -moz-border-radius:50px;
+ border-radius:150px;
+ width:200px;
+ height:200px;
+ background-size:150px 0px;
+ padding-bottom: 20px
+}
+
+.leaderboard_username{
+  font-size: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.leaderboard_score{
+  font-size: 50px;
 }

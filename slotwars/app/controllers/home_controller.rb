@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   # $thing = Game.new
-
   def index
     @gamble = Slot.new
     @result = @gamble.spin

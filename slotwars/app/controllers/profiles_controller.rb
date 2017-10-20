@@ -15,7 +15,8 @@ class ProfilesController < ApplicationController
   # GET /profiles/new
   def new
     @profile = Profile.new
-    current_user.score = 0
+
+
   end
 
   # GET /profiles/1/edit
