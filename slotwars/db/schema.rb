@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171020002221) do
+ActiveRecord::Schema.define(version: 20171019025643) do
 
   create_table "profiles", force: :cascade do |t|
-    t.bigint "user_id"
+    t.integer "user_id"
     t.string "username"
     t.text "avatar_data"
     t.datetime "created_at", null: false
@@ -54,6 +54,4 @@ ActiveRecord::Schema.define(version: 20171020002221) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "profiles", "users"
-  add_foreign_key "tokens", "users"
 end
