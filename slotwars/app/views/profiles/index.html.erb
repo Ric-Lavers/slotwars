@@ -7,7 +7,7 @@
 
 
 <br>
-
+<%=audio_tag("/theme.mp3", :autoplay => true)%>
 <div class="credits">
   <div class="fade"></div>
 
@@ -31,6 +31,9 @@
         </thead>
 
         <tbody>
+          <%@profiles = @profiles.sort_by{|profile|profile.user.score }.reverse%>
+
+
           <% @profiles.each do |profile| %>
             <tr>
               <td><img class="profile_image" src="<%= profile.avatar_url%>"></td>
